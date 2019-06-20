@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    binding.pry
     @user = User.create(
               nickname: user_params[:nickname],
               email: user_params[:email],
